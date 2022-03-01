@@ -12,72 +12,39 @@
   <a href="https://cyber-nomix.github.io/Employment.html">Employment and School Awareness</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
-  </a>
- 
+  </a> 
 </div>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.city {display:none}
-</style>   
-<div class="w3-container">
-
-<script type="text/javascript">
+  <script type="text/javascript">
     $(window).on('load', function() {
-        $('id01').modal('show');
+        $('#myModal').modal('show');
     });
-  </script>
-<div id="id01" class="w3-modal">
- <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-  <header class="w3-container w3-blue"> 
-   <span onclick="document.getElementById('id01').style.display='none'" 
-   class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
-   <h2>Header</h2>
-  </header>
-
-  <div class="w3-bar w3-border-bottom">
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Olivia')">Olivia</button>
-   <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Cherrylita')">Cherrylita</button>
-  </div>
-
-  <div id="Olivia" class="w3-container city">
-   <h1>Olivia Janssen</h1>
+</script>
+  <div class="modal hide fade" id="myModal">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Modal header</h3>
+    </div>
+    <div class="modal-body">
+     <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'London')">London</button>
+     <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Paris')">Paris</button>  
+    </div>
+ <div id="London" class="w3-container city">
+   <h1>London</h1>
    <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
 
-  <div id="Cherrylita" class="w3-container city">
-   <h1>Cherrylita Turner</h1>
+  <div id="Paris" class="w3-container city">
+   <h1>Paris</h1>
    <p>Paris is the capital of France.</p>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
-
-  <div class="w3-container w3-light-grey w3-padding">
-   <button class="w3-button w3-right w3-white w3-border" 
-   onclick="document.getElementById('id01').style.display='none'">Close</button>
-  </div>
- </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+    </div>
 </div>
-
-</div>
-
-<script>
- <a class="btn" data-toggle="modal" href="#id01">Launch Modal</a>
-
-function openCity(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].classList.remove("w3-light-grey");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.classList.add("w3-light-grey");
-}
-</script>  
+ <a class="btn" data-toggle="modal" href="#myModal">Launch Modal</a> 
   <body>
     <h1> Welcome to Cyber-Nomix </h1>
     <p> </p>
