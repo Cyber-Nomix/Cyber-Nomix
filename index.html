@@ -3,7 +3,14 @@
     <link href="StyleSheet.css" rel="stylesheet">  
     <!--<link href= "Modal.js" rel="JavaScript">-->
 <head>
-    <div id="myModal" class="modal fade" role="dialog">
+    <script>
+        $(window).load(function(){        
+         $('#myModal').modal('show');
+          });  
+      </script>
+  
+    </head>
+ <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
     <div class="modal-content">
@@ -19,15 +26,7 @@
       </div>
     </div>
 
-  </div>
-    <script>
-        $(window).load(function(){        
-         $('#myModal').modal('show');
-          });  
-      </script>
-  
-    </head>
-    
+  </div>   
  <body>
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
